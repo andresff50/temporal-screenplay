@@ -1,0 +1,233 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;user-logs-in-successfully3",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs in successfully3",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 468582108
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Juan is on the login page3",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition Copy 2.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 520714822
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "he logs in with valid credentials3",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition Copy 2.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230984734
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "he should see the dashboard3",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition Copy 2.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1233733
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121622627
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src/tests/features/login-failed-test1.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;user-logs-in-successfully2",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs in successfully2",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 505236254
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Juan is on the login page2",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition Copy.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 531909141
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "he logs in with valid credentials2",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition Copy.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239494937
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "he should see the dashboard2",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition Copy.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1553531
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 90924803
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src/tests/features/login-failed.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;user-logs-in-successfully",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs in successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 497202205
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Juan is on the login page",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 554563163
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "he logs in with valid credentials",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224387441
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "he should see the dashboard",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1024741
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88048197
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src/tests/features/login.feature"
+  }
+]

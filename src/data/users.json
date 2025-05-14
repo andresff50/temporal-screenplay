@@ -1,0 +1,44 @@
+{
+  "QA": {
+    "User1": {
+      "username": "standard_user",
+      "password": "secret_sauce"
+    },
+    "User2": {
+      "username": "locked_out_user",
+      "password": "secret_sauce"
+    },
+    "User3": {
+      "username": "problem_user",
+      "password": "secret_sauce"
+    }
+  },
+  "UAT": {
+    "User1": {
+      "username": "standard_user",
+      "password": "secret_sauce"
+    },
+    "User2": {
+      "username": "locked_out_user",
+      "password": "secret_sauce"
+    },
+    "User3": {
+      "username": "problem_user",
+      "password": "secret_sauce"
+    }
+  },
+  "Preview": {
+    "User1": {
+      "username": "standard_user",
+      "password": "secret_sauce"
+    },
+    "User2": {
+      "username": "locked_out_user",
+      "password": "secret_sauce"
+    },
+    "User3": {
+      "username": "problem_user",
+      "password": "secret_sauce"
+    }
+  }
+}
