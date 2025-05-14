@@ -9,7 +9,9 @@
       "progress-bar",
       "summary",
       "json:reports/cucumber-report.json",
-      "html:reports/cucumber-report.html"
+      "html:reports/cucumber-report.html",
+      "allure-cucumberjs/reporter",
+      "json:allure-results/cucumber-report.json"
     ],
     "formatOptions": {
       "colorsEnabled": true,

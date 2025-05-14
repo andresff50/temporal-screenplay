@@ -1,6 +1,7 @@
 import { After, Before } from "@cucumber/cucumber";
 import { CustomWorld } from "./world";
 
+
 Before(async function (this: CustomWorld) {
   console.log('[Before Hook] Initializing Screenplay world ...');
   try {
