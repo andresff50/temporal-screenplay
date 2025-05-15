@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 338646045
+              "duration": 339616874
             }
           },
           {
@@ -33,16 +33,20 @@
             "keyword": "Dado ",
             "line": 6,
             "name": "que inicio sesion en la pagina de SalesForce con los datos de sesion",
+            "match": {
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition.ts:29"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 6675010,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'ambiente')\n    at CustomWorld.<anonymous> (/home/prop/playwright/temporal/src/tests/step-definitions/inicio-sesion-step-definition.ts:31:24)"
             }
           },
           {
             "arguments": [],
             "keyword": "Entonces ",
             "line": 8,
-            "name": "verificola ventana de inicio",
+            "name": "verifico la ventana de inicio",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -53,7 +57,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 102798525
+              "duration": 86814257
             }
           }
         ],
@@ -66,6 +70,6 @@
     "keyword": "Característica",
     "name": "Ingresar a la pagina principal de Claro",
     "tags": [],
-    "uri": "src/tests/features/inicio_a_salesforce.feature"
+    "uri": "src/tests/features/login.feature"
   }
 ]

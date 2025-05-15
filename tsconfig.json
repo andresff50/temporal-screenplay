@@ -5,7 +5,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "resolveJsonModule": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },

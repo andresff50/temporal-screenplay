@@ -5,7 +5,7 @@ Característica: Ingresar a la pagina principal de Claro
   Esquema del escenario: Ingresar al Home de SalesForce
     Dado que inicio sesion en la pagina de SalesForce con los datos de sesion
       | <ambiente> | <perfil> |
-    Entonces verificola ventana de inicio
+    Entonces verifico la ventana de inicio
 
     Ejemplos:
       | ambiente | perfil           |
