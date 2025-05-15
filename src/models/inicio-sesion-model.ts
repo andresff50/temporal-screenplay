@@ -2,25 +2,25 @@ export class InicioSesionModel {
   private static instance: InicioSesionModel | null = null;
 
   private constructor(
-    public username: string,
-    public password: string
+    public ambiente: string,
+    public perfil: string
   ) {}
 
-  getUsername(): string {
-    return this.username;
+  getAmbiente(): string {
+    return this.ambiente;
   }
 
-  getPassword(): string {
-    return this.password;
+  getPerfil(): string {
+    return this.perfil;
   }
 
-  static getInstance(username?: string, password?: string): InicioSesionModel {
+  static getInstance(ambiente?: string, perfil?: string): InicioSesionModel {
     if (!InicioSesionModel.instance) {
-      if (!username || !password) {
+      if (!ambiente || !perfil) {
         throw new Error("Username and password are required for the first call to getInstance.");
       }
       console.log("Creating instance...");
-      InicioSesionModel.instance = new InicioSesionModel(username, password);
+      InicioSesionModel.instance = new InicioSesionModel(ambiente, perfil);
     } else {
       console.log("Returning existing instance...");
     }

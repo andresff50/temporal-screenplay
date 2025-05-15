@@ -8,5 +8,5 @@ Característica: Ingresar a la pagina principal de Claro
     Entonces verifico la ventana de inicio
 
     Ejemplos:
-      | ambiente | perfil           |
-      | https://www.elliotdenolf.com/blog/cucumberjs-with-typescript    | asesorCavDirecto |
+      | ambiente                                                     | perfil           |
+      | https://www.elliotdenolf.com/blog/cucumberjs-with-typescript | asesorCavDirecto |
