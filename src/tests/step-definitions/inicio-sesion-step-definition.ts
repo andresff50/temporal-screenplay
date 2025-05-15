@@ -1,5 +1,6 @@
 import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
-import { Login, AbrirPagina } from '../../task';
+import { AbrirPagina } from '../../tasks/abrir-pagina';
+import { Login } from '../../tasks/inicio-sesion';
 import { CustomWorld } from "../../support/world";
 import { urlData } from "../../data/urls";
 import data from '../../data/users.json';

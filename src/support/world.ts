@@ -1,9 +1,8 @@
 // features/support/world.ts
 import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
 import { Browser, BrowserContext, chromium, Page } from 'playwright';
-
-import { Actor } from '../screenplay-pattern';
-import { BrowseTheWeb } from '../abilities';
+import { BrowseTheWeb } from '../../screenplay/abilities';
+import { Actor } from '../../screenplay/actor';
 
 export class CustomWorld extends World {
   private browser!: Browser;

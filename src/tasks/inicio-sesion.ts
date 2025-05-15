@@ -1,21 +1,6 @@
-// src/tasks/OpenHomePage.ts
-import { Task } from './screenplay-pattern';
-import { Click, Enter, NavigateTo } from './interaction';
-import { Actor } from './screenplay-pattern';
-
-export class AbrirPagina extends Task {
-  constructor(private url: string) {
-    super();
-  }
-
-  public async performAs(actor: Actor): Promise<void> {
-    await actor.performs(NavigateTo.url(this.url));
-  }
-
-  public static enElNavegador(url: string): AbrirPagina {
-    return new AbrirPagina(url);
-  }
-}
+import { Actor } from "../../screenplay/actor";
+import { Click, Enter } from "../../screenplay/interaction";
+import { Task } from "../../screenplay/task";
 
 export class Login extends Task {
 
@@ -33,4 +18,3 @@ export class Login extends Task {
   public static inOrangePage(userName: string, psw: string): Login {
     return new Login(userName, psw);
   }
-}
