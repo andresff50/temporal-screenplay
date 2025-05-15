@@ -26,16 +26,20 @@ import data from '../../data/users.json'
 // });
 
 
-Given('que inicio sesion en la pagina de SalesForce con los datos de sesion', async function(this: CustomWorld, dataTable) {
-  const [row] = dataTable.hashes();
-  const ambiente = row.ambiente;
-  const perfil = row.perfil;
+Given('que inicio sesion en la pagina de SalesForce con los datos de sesion', async function(this: CustomWorld, dataTable: any) {
+  console.log('HOLAAAAAAAAA!!!! ');
+  const row = dataTable.hashes();
+  const ambiente = row[0]['ambiente'];
+  const perfil = row[0]['perfil'];
 
+  console.log('ambiente: ', ambiente);
+  console.log('perfil: ', perfil);
+  console.log('Row', dataTable.hashes());
   const urls: Record<string, string> = {
-    sit01: 'https://salesforce-sit01.claro.com',
+    sit01: 'https://salesforce-sit01.claro.com'
   };
   // const url = urls[ambiente];
-
+  
   // Determinar el usuario para ejecución según el entorno
   const userKey = urlData.default.includes('sit') ? "sit01" : "uat";
   console.log('sdasd')
