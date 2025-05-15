@@ -1,44 +1,22 @@
 {
-  "QA": {
-    "User1": {
-      "username": "standard_user",
-      "password": "secret_sauce"
+  "sit01": {
+    "asesorCavDirecto": {
+      "username": "autosf1@claro.com.co.sit01",
+      "password": "autosf01"
     },
-    "User2": {
-      "username": "locked_out_user",
-      "password": "secret_sauce"
-    },
-    "User3": {
-      "username": "problem_user",
-      "password": "secret_sauce"
+    "asesorCavAliados": {
+      "username": "autosf2@claro.com.co.sit01",
+      "password": "autosf02"
     }
   },
-  "UAT": {
-    "User1": {
-      "username": "standard_user",
-      "password": "secret_sauce"
+  "uat": {
+    "asesorCavDirecto": {
+      "username": "autosf1@claro.com.co.uat",
+      "password": "autosf01"
     },
-    "User2": {
-      "username": "locked_out_user",
-      "password": "secret_sauce"
-    },
-    "User3": {
-      "username": "problem_user",
-      "password": "secret_sauce"
-    }
-  },
-  "Preview": {
-    "User1": {
-      "username": "standard_user",
-      "password": "secret_sauce"
-    },
-    "User2": {
-      "username": "locked_out_user",
-      "password": "secret_sauce"
-    },
-    "User3": {
-      "username": "problem_user",
-      "password": "secret_sauce"
+    "asesorCavAliados": {
+      "username": "autosf2@claro.com.co.uat",
+      "password": "autosf02"
     }
   }
 }

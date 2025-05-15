@@ -3,10 +3,10 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 (async () => {
-  const reportPath: string = path.resolve(__dirname, 'allure-report', 'index.html');
+  const reportPath: string = path.resolve(__dirname, 'reports', 'cucumber-report.html');
 
   if (!fs.existsSync(reportPath)) {
-    console.error('❌ Allure report not found! Please generate it first.');
+    console.error('❌ Allure report not found! Please generate it first.', reportPath);
     process.exit(1);
   }
 

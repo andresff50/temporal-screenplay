@@ -1,6 +1,12 @@
-Feature: Login
+# language: es
+Característica: Ingresar a la pagina principal de Claro
+  Yo como automatizador requiero ingresar a SalesForce para verificar la funcionalidad de autenticación.
 
-  Scenario: User logs in successfully
-    Given Juan is on the login page
-    When he logs in with valid credentials
-    Then he should see the dashboard
+  Esquema del escenario: Ingresar al Home de SalesForce
+    Dado que inicio sesion en la pagina de SalesForce con los datos de sesion
+      | <ambiente> | <perfil> |
+    Entonces verificola ventana de inicio
+
+    Ejemplos:
+      | ambiente | perfil           |
+      | sit01    | asesorCavDirecto |

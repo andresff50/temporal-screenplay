@@ -3,13 +3,17 @@ import { Task } from './screenplay-pattern';
 import { Click, Enter, NavigateTo } from './interaction';
 import { Actor } from './screenplay-pattern';
 
-export class OpenHomePage extends Task {
-  constructor() {
+export class AbrirPagina extends Task {
+  constructor(private url: string) {
     super();
   }
 
   public async performAs(actor: Actor): Promise<void> {
-    await actor.performs(NavigateTo.url('https://www.saucedemo.com/'));
+    await actor.performs(NavigateTo.url(this.url));
+  }
+
+  public static enElNavegador(url: string): AbrirPagina {
+    return new AbrirPagina(url);
   }
 }
 
