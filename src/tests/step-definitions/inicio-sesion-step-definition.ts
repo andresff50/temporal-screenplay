@@ -2,7 +2,10 @@ import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { Login, AbrirPagina } from '../../task';
 import { CustomWorld } from "../../support/world";
 import { urlData } from "../../data/urls";
-import data from '../../data/users.json'
+import data from '../../data/users.json';
+import { DataTable } from '@cucumber/cucumber';
+
+
 // const loginSuccesfull = {
 //   openHomePage: new OpenHomePage(),
 //   login: new Login("standard_user", "secret_sauce"),
@@ -27,25 +30,11 @@ import data from '../../data/users.json'
 
 
 Given('que inicio sesion en la pagina de SalesForce con los datos de sesion', async function(this: CustomWorld, dataTable: any) {
-  console.log('HOLAAAAAAAAA!!!! ');
-  const row = dataTable.hashes();
-  const ambiente = row[0]['ambiente'];
-  const perfil = row[0]['perfil'];
-
-  console.log('ambiente: ', ambiente);
-  console.log('perfil: ', perfil);
-  console.log('Row', dataTable.hashes());
-  const urls: Record<string, string> = {
-    sit01: 'https://salesforce-sit01.claro.com'
-  };
-  // const url = urls[ambiente];
-  
-  // Determinar el usuario para ejecución según el entorno
-  const userKey = urlData.default.includes('sit') ? "sit01" : "uat";
-  console.log('sdasd')
-  // Obtener las credenciales del usuario
-  const { user, password } = data[ambiente][perfil]
-
-  await this.getActor().performs(AbrirPagina.enElNavegador('https://www.elliotdenolf.com/blog/cucumberjs-with-typescript'));
-  await console.log('dsdsd', user)
+  const table = dataTable.raw();
+  console.log(dataTable)
+  const url = table[0][0]; // 'https://www.elliotdenolf.com/blog/cucumberjs-with-typescript'
+  const user = table[0][1]; // 'asesorCavDirecto'
+  console.log('URL:', url);
+  console.log('User:', user);
+  await this.getActor().performs(AbrirPagina.enElNavegador(url));
 });

@@ -9,4 +9,4 @@ Característica: Ingresar a la pagina principal de Claro
 
     Ejemplos:
       | ambiente | perfil           |
-      | sit01    | asesorCavDirecto |
+      | https://www.elliotdenolf.com/blog/cucumberjs-with-typescript    | asesorCavDirecto |

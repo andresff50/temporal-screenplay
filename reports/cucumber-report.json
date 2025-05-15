@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 441353799
+              "duration": 589698521
             }
           },
           {
@@ -23,7 +23,7 @@
                 "rows": [
                   {
                     "cells": [
-                      "sit01",
+                      "https://www.elliotdenolf.com/blog/cucumberjs-with-typescript",
                       "asesorCavDirecto"
                     ]
                   }
@@ -34,12 +34,11 @@
             "line": 6,
             "name": "que inicio sesion en la pagina de SalesForce con los datos de sesion",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:29"
+              "location": "src/tests/step-definitions/inicio-sesion-step-definition.ts:32"
             },
             "result": {
-              "status": "failed",
-              "duration": 7949700,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'ambiente')\n    at CustomWorld.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:32:26)"
+              "status": "passed",
+              "duration": 1807640789
             }
           },
           {
@@ -57,7 +56,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 302073800
+              "duration": 135025794
             }
           }
         ],
@@ -70,6 +69,6 @@
     "keyword": "Característica",
     "name": "Ingresar a la pagina principal de Claro",
     "tags": [],
-    "uri": "src\\tests\\features\\login.feature"
+    "uri": "src/tests/features/login.feature"
   }
 ]
