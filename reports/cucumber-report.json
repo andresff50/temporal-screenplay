@@ -4,83 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "login;user-logs-in-successfully2",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "User logs in successfully2",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 522943099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "Juan is on the login page2",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 816656000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "he logs in with valid credentials2",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 133901400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "he should see the dashboard2",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1080199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 257096400
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Login",
-    "tags": [],
-    "uri": "src\\tests\\features\\login-failed.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
         "id": "login;user-logs-in-successfully3",
         "keyword": "Scenario",
         "line": 3,
@@ -91,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 462441400
+              "duration": 646757899
             }
           },
           {
@@ -104,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 876710300
+              "duration": 1197588700
             }
           },
           {
@@ -117,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 134521099
+              "duration": 120896899
             }
           },
           {
@@ -130,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 929399
+              "duration": 1065200
             }
           },
           {
@@ -138,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 223091100
+              "duration": 168354699
             }
           }
         ],
@@ -158,6 +81,83 @@
     "elements": [
       {
         "description": "",
+        "id": "login;user-logs-in-successfully2",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs in successfully2",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 888505299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Juan is on the login page2",
+            "match": {
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1035197000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "he logs in with valid credentials2",
+            "match": {
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129768799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "he should see the dashboard2",
+            "match": {
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 168586199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src\\tests\\features\\login-failed.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "login;user-logs-in-successfully",
         "keyword": "Scenario",
         "line": 3,
@@ -168,7 +168,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 515902000
+              "duration": 836581000
             }
           },
           {
@@ -177,11 +177,11 @@
             "line": 4,
             "name": "Juan is on the login page",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:10"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 817904200
+              "duration": 950620900
             }
           },
           {
@@ -190,11 +190,12 @@
             "line": 5,
             "name": "he logs in with valid credentials",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:16"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:21"
             },
             "result": {
-              "status": "passed",
-              "duration": 132712899
+              "status": "failed",
+              "duration": 5006590000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"
             }
           },
           {
@@ -203,11 +204,11 @@
             "line": 6,
             "name": "he should see the dashboard",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:22"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:27"
             },
             "result": {
-              "status": "passed",
-              "duration": 989500
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -215,7 +216,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 198714500
+              "duration": 162153899
             }
           }
         ],

@@ -1,11 +1,16 @@
 import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { Login, OpenHomePage } from '../../task';
 import { CustomWorld } from "../../support/world";
+import { InicioSesionModel } from "../../models/inicio-sesion-model";
+
+InicioSesionModel.getInstance("usuario123", "clave456");
 
 const loginSuccesfull = {
   openHomePage: new OpenHomePage(),
-  login: new Login("standard_user", "secret_sauce")
+  login: new Login(InicioSesionModel.getInstance().getUsername(), InicioSesionModel.getInstance().getPassword())
 }
+
+
 
 Given('Juan is on the login page', async function(this: CustomWorld) {
   // await this.getActor().performs(new OpenHomePage());
