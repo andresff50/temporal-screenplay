@@ -3,6 +3,8 @@ import { AbrirPagina } from '../../tasks/abrir-pagina';
 import { Login } from '../../tasks/inicio-sesion';
 import { CustomWorld } from "../../config/world";
 import { InicioSesionModel } from '../../models/inicio-sesion-model';
+import { equals, Question, See } from "../../../screenplay/question";
+import { Title } from "../../questions/verificar-titulo";
 
 
 // const loginSuccesfull = {
@@ -34,6 +36,7 @@ const loginSuccesfull = {
 }
 
 Given('que inicio sesion en la pagina de SalesForce con los datos de sesion', async function(this: CustomWorld, dataTable: any) {
+//  let actor = this.getActor();
   const table = dataTable.raw();
   console.log(dataTable)
   const ambiente = table[0][0]; // 'https://www.elliotdenolf.com/blog/cucumberjs-with-typescript'
@@ -55,4 +58,9 @@ Then('verifico la ventana de inicio', async function(this: CustomWorld) {
   console.log('👤 Perfil:', modelo.getPerfil());
 
   // Aquí haces la verificación que necesites
+  //await this.getActor().performs(See.that(CurrentUrl.value(), equals(urlEsperada), 'La URL no coincide con la esperada'));
+
+  //await this.getActor().asksAbout(Title.ecualsTo("Inicio | Salesforce"))
+  await this.getActor().asksAbout(Title.ecualsTo("Login | Salesforce"))
+
 });
