@@ -4,15 +4,16 @@
       "src/tests/features/**/*.feature"
     ],
     "dryRun": false,
-    "parallel": 3,
-    "timeout": 10000,
+    "parallel": 3,    
     "format": [
       "progress-bar",
       "summary",
       "json:reports/cucumber-report.json",
       "html:reports/cucumber-report.html",
       "allure-cucumberjs/reporter",
-      "json:allure-results/cucumber-report.json"
+      "json:allure-results/cucumber-report.json",
+      "message",
+      "progress"
     ],
     "formatOptions": {
       "colorsEnabled": true,

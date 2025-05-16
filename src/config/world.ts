@@ -37,6 +37,9 @@ export class CustomWorld extends World {
     this.browser = await browserType.launch({ headless: false });
     this.context = await this.browser.newContext();
     this.page = await this.context.newPage();
+    this.page.setDefaultTimeout(30000); // aplica a todas las acciones
+    this.page.setDefaultNavigationTimeout(50000); // aplica a navegación
+
 
     this.actor = new Actor([
       new BrowseTheWeb(this.page)

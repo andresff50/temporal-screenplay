@@ -6,7 +6,9 @@ Característica: Ingresar a la pagina principal de Claro
   Esquema del escenario: 1 Ingresar al Home de SalesForce
     Dado que inicio sesion en la pagina de SalesForce con los datos de sesion
       | <ambiente> | <perfil> |
-    Entonces verifico la ventana de inicio
+    Cuando ingreso a detalles avanzados de usuario 
+    
+    Entonces verifico el perfil que se accedio
 
     Ejemplos:
       | ambiente | perfil           |
@@ -16,7 +18,10 @@ Característica: Ingresar a la pagina principal de Claro
   Esquema del escenario: 2 Ingresar al Home de SalesForce
     Dado que inicio sesion en la pagina de SalesForce con los datos de sesion
       | <ambiente> | <perfil> |
-    Entonces verifico la ventana de inicio
+    Cuando ingreso a detalles avanzados de usuario 
+    
+    Entonces verifico el perfil que se accedio
+    
 
     Ejemplos:
       | ambiente | perfil           |

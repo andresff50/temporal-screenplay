@@ -13,6 +13,7 @@ export class Title extends Question {
 
   async askAs(actor: Actor): Promise<void> {
     const page = await actor.useAbility(BrowseTheWeb);
+    await page.waitForFunction(() => {}, null, { timeout: 10000 });
     await expect(page).toHaveTitle(this.expectedTitle, { timeout: 10000 });
   }
 

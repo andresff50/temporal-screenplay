@@ -6,7 +6,7 @@
         "description": "",
         "id": "ingresar-a-la-pagina-principal-de-claro;1-ingresar-al-home-de-salesforce",
         "keyword": "Esquema del escenario",
-        "line": 13,
+        "line": 15,
         "name": "1 Ingresar al Home de SalesForce",
         "steps": [
           {
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 702369700
+              "duration": 616084800
             }
           },
           {
@@ -34,25 +34,38 @@
             "line": 7,
             "name": "que inicio sesion en la pagina de SalesForce con los datos de sesion",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:39"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 5046395800,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+              "status": "passed",
+              "duration": 5373822499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 9,
+            "name": "ingreso a detalles avanzados de usuario",
+            "match": {
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12419943900
             }
           },
           {
             "arguments": [],
             "keyword": "Entonces ",
-            "line": 9,
-            "name": "verifico la ventana de inicio",
+            "line": 11,
+            "name": "verifico el perfil que se accedio",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:55"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:32"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5015747399,
+              "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('iframe[src*=\"lightning.force.com\"]').nth(1).contentFrame().locator('table.detailList tbody tr:first-child td.dataCol a')\nExpected string: \u001b[32m\"asesorCavDirecto\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('iframe[src*=\"lightning.force.com\"]').nth(1).contentFrame().locator('table.detailList tbody tr:first-child td.dataCol a')\u001b[22m\n\n    at Proxy.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\node_modules\\playwright\\lib\\matchers\\expect.js:221:24)\n    at VerificacionPerfil.askAs (C:\\workspace\\Playwright\\temporal-screenplay\\src\\questions\\verificar-perfil.ts:24:28)\n    at async Actor.asksAbout (C:\\workspace\\Playwright\\temporal-screenplay\\screenplay\\actor.ts:39:12)\n    at async CustomWorld.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:35:3)"
             }
           },
           {
@@ -60,7 +73,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 446110500
+              "duration": 243696100
             }
           }
         ],
@@ -80,7 +93,7 @@
         "description": "",
         "id": "ingresar-a-la-pagina-principal-de-claro;2-ingresar-al-home-de-salesforce",
         "keyword": "Esquema del escenario",
-        "line": 23,
+        "line": 28,
         "name": "2 Ingresar al Home de SalesForce",
         "steps": [
           {
@@ -88,7 +101,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 682862300
+              "duration": 624457800
             }
           },
           {
@@ -105,28 +118,41 @@
               }
             ],
             "keyword": "Dado ",
-            "line": 17,
+            "line": 19,
             "name": "que inicio sesion en la pagina de SalesForce con los datos de sesion",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:39"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:12"
             },
             "result": {
-              "status": "failed",
-              "duration": 5031245499,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+              "status": "passed",
+              "duration": 4966620200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 21,
+            "name": "ingreso a detalles avanzados de usuario",
+            "match": {
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11457572200
             }
           },
           {
             "arguments": [],
             "keyword": "Entonces ",
-            "line": 19,
-            "name": "verifico la ventana de inicio",
+            "line": 23,
+            "name": "verifico el perfil que se accedio",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:55"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:32"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 5053019299,
+              "error_message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('iframe[src*=\"lightning.force.com\"]').nth(1).contentFrame().locator('table.detailList tbody tr:first-child td.dataCol a')\nExpected string: \u001b[32m\"asesorCavAliados\"\u001b[39m\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - locator._expect with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('iframe[src*=\"lightning.force.com\"]').nth(1).contentFrame().locator('table.detailList tbody tr:first-child td.dataCol a')\u001b[22m\n\n    at Proxy.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\node_modules\\playwright\\lib\\matchers\\expect.js:221:24)\n    at VerificacionPerfil.askAs (C:\\workspace\\Playwright\\temporal-screenplay\\src\\questions\\verificar-perfil.ts:24:28)\n    at async Actor.asksAbout (C:\\workspace\\Playwright\\temporal-screenplay\\screenplay\\actor.ts:39:12)\n    at async CustomWorld.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:35:3)"
             }
           },
           {
@@ -134,18 +160,18 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 513113499
+              "duration": 215699300
             }
           }
         ],
         "tags": [
           {
             "name": "@ejecucion_2",
-            "line": 15
+            "line": 17
           },
           {
             "name": "@regresion",
-            "line": 15
+            "line": 17
           }
         ],
         "type": "scenario"
