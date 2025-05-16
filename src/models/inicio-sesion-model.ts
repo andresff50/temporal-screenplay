@@ -17,6 +17,8 @@ export class InicioSesionModel {
         throw new Error("Username and password are required for the first call to getInstance.");
       }
       const url = getSalesforceUrl(ambiente);
+      const user = getUsuario(perfil);
+      const password = getPassword(perfil);
       console.log("Creating instance...");
       InicioSesionModel.instance = new InicioSesionModel(ambiente, perfil, url);
     } else {

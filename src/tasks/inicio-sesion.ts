@@ -16,6 +16,7 @@ export class Login extends Task {
     await actor.performs(Click.on(LoginPage.elements.btnLogin()));    
   }
 
-  public static inOrangePage(userName: string, psw: string): Login {
+  public static enSalesForce(userName: string, psw: string): Login {
     return new Login(userName, psw);
   }
+}

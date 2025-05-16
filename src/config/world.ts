@@ -1,4 +1,3 @@
-// features/support/world.ts
 import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
 import { Browser, BrowserContext, chromium,firefox, webkit, BrowserType, Page } from 'playwright';
 import { BrowseTheWeb } from '../../screenplay/abilities';

@@ -19,7 +19,7 @@
     },
     "require": [
       "src/tests/step-definitions/**/*.ts",
-      "src/support/**/*ts"
+      "src/config/**/*ts"
     ],
     "requireModule": [
       "ts-node/register"
