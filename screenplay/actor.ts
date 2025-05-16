@@ -1,4 +1,4 @@
-import { Ability } from "@screenplay/abilities";
+import { Ability } from "./abilities";
 import { Interaction } from "./interaction";
 import { Question } from "./question";
 import { Task } from "./task";

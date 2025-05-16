@@ -9,5 +9,5 @@ Característica: Ingresar a la pagina principal de Claro
     Entonces verifico la ventana de inicio
 
     Ejemplos:
-      | ambiente                                            | perfil           |
-      | https://clarosfi--sit01.sandbox.my.salesforce.com/ | asesorCavDirecto |
+      | ambiente | perfil           |
+      | sit01    | asesorCavDirecto |
