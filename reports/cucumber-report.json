@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 646757899
+              "duration": 469409599
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1197588700
+              "duration": 598166999
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 120896899
+              "duration": 120440900
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1065200
+              "duration": 969399
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 168354699
+              "duration": 180219200
             }
           }
         ],
@@ -91,7 +91,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 888505299
+              "duration": 453910300
             }
           },
           {
@@ -104,7 +104,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1035197000
+              "duration": 609145599
             }
           },
           {
@@ -117,7 +117,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 129768799
+              "duration": 115664399
             }
           },
           {
@@ -130,7 +130,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 712799
+              "duration": 1056399
             }
           },
           {
@@ -138,7 +138,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 168586199
+              "duration": 194448900
             }
           }
         ],
@@ -168,7 +168,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 836581000
+              "duration": 470619000
             }
           },
           {
@@ -181,7 +181,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 950620900
+              "duration": 652431099
             }
           },
           {
@@ -194,8 +194,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5006590000,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"
+              "duration": 3544960000,
+              "error_message": "page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#add-to-cart-sauce-labs-backpack')\u001b[22m\n\n    at Click.attemptAs (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\interaction.ts:32:16)\n    at async Actor.performs (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\screenplay-pattern.ts:84:7)\n    at async Login.performAs (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\task.ts:26:5)\n    at async Actor.performs (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\screenplay-pattern.ts:82:7)\n    at async CustomWorld.<anonymous> (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:23:3)"
             }
           },
           {
@@ -216,7 +216,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 162153899
+              "duration": 152994699
             }
           }
         ],

@@ -1,7 +1,6 @@
 // features/support/world.ts
 import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
-import { Browser, BrowserContext, chromium, Page } from 'playwright';
-
+import { Browser, BrowserContext, chromium, firefox, webkit, BrowserType ,Page } from 'playwright';
 import { Actor } from '../screenplay-pattern';
 import { BrowseTheWeb } from '../abilities';
 
@@ -17,7 +16,24 @@ export class CustomWorld extends World {
 
   // Este método se llama desde un hook Before
   public async init(): Promise<void> {
-    this.browser = await chromium.launch({ headless: false });
+
+    const browserName = process.env.BROWSER || 'chromium';
+    let browserType: BrowserType<Browser>;
+    
+    switch (browserName) {
+    case 'firefox':
+      browserType = firefox;
+      break;
+    case 'webkit':
+      browserType = webkit;
+      break;
+    case 'chromium':
+    default:
+      browserType = chromium;
+      break;
+    }
+
+    this.browser = await browserType.launch({ headless: false });
     this.context = await this.browser.newContext();
     this.page = await this.context.newPage();
 
