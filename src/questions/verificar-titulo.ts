@@ -1,4 +1,4 @@
-import { expect, Page } from "@playwright/test";
+import { expect } from "@playwright/test";
 import { Actor } from "../../screenplay/actor";
 import { Question } from "../../screenplay/question";
 import { BrowseTheWeb } from "../../screenplay/abilities";
@@ -13,7 +13,7 @@ export class Title extends Question {
 
   async askAs(actor: Actor): Promise<void> {
     const page = await actor.useAbility(BrowseTheWeb);
-    await expect(page).toHaveTitle(this.expectedTitle);
+    await expect(page).toHaveTitle(this.expectedTitle, { timeout: 10000 });
   }
 
   static ecualsTo(expectedTitle: string | RegExp) {

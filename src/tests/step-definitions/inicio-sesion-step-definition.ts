@@ -61,7 +61,7 @@ Then('verifico la ventana de inicio', async function(this: CustomWorld) {
   // Aquí haces la verificación que necesites
   //await this.getActor().performs(See.that(CurrentUrl.value(), equals(urlEsperada), 'La URL no coincide con la esperada'));
 
-  //await this.getActor().asksAbout(Title.ecualsTo("Inicio | Salesforce"))
-  await this.getActor().asksAbout(Title.ecualsTo("Login | Salesforce"))
+  await this.getActor().asksAbout(Title.ecualsTo("Inicio | Salesforce"))
+  //await this.getActor().asksAbout(Title.ecualsTo("Login | Salesforce"))
 
 });

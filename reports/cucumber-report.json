@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 637950800
+              "duration": 702369700
             }
           },
           {
@@ -38,7 +38,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5035143300,
+              "duration": 5046395800,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
             }
           },
@@ -60,7 +60,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 321847700
+              "duration": 446110500
             }
           }
         ],
@@ -88,7 +88,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 582821899
+              "duration": 682862300
             }
           },
           {
@@ -112,7 +112,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5034356000,
+              "duration": 5031245499,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
             }
           },
@@ -134,7 +134,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 275738600
+              "duration": 513113499
             }
           }
         ],

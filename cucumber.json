@@ -5,6 +5,7 @@
     ],
     "dryRun": false,
     "parallel": 3,
+    "timeout": 10000,
     "format": [
       "progress-bar",
       "summary",
