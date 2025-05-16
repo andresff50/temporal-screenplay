@@ -1,59 +1,57 @@
 [
   {
-    "description": "",
+    "description": "  Yo como automatizador requiero ingresar a SalesForce para verificar la funcionalidad de autenticación.",
     "elements": [
       {
         "description": "",
-        "id": "login;user-logs-in-successfully3",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "User logs in successfully3",
+        "id": "ingresar-a-la-pagina-principal-de-claro;1-ingresar-al-home-de-salesforce",
+        "keyword": "Esquema del escenario",
+        "line": 13,
+        "name": "1 Ingresar al Home de SalesForce",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 469409599
+              "duration": 3952127399
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "sit01",
+                      "asesorCavDirecto"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Dado ",
+            "line": 7,
+            "name": "que inicio sesion en la pagina de SalesForce con los datos de sesion",
+            "match": {
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3580987300
             }
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "Juan is on the login page3",
+            "keyword": "Entonces ",
+            "line": 9,
+            "name": "verifico la ventana de inicio",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy 2.ts:10"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:49"
             },
             "result": {
               "status": "passed",
-              "duration": 598166999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "he logs in with valid credentials3",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy 2.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 120440900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "he should see the dashboard3",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy 2.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 969399
+              "duration": 4448200
             }
           },
           {
@@ -61,76 +59,72 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 180219200
+              "duration": 895144600
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@ejecucion_1",
+            "line": 5
+          },
+          {
+            "name": "@regresion",
+            "line": 5
+          }
+        ],
         "type": "scenario"
-      }
-    ],
-    "id": "login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Login",
-    "tags": [],
-    "uri": "src\\tests\\features\\login-failed-test1.feature"
-  },
-  {
-    "description": "",
-    "elements": [
+      },
       {
         "description": "",
-        "id": "login;user-logs-in-successfully2",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "User logs in successfully2",
+        "id": "ingresar-a-la-pagina-principal-de-claro;2-ingresar-al-home-de-salesforce",
+        "keyword": "Esquema del escenario",
+        "line": 23,
+        "name": "2 Ingresar al Home de SalesForce",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 453910300
+              "duration": 3119460799
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "sit01",
+                      "asesorCavDirecto"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Dado ",
+            "line": 17,
+            "name": "que inicio sesion en la pagina de SalesForce con los datos de sesion",
+            "match": {
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4150496000
             }
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "Juan is on the login page2",
+            "keyword": "Entonces ",
+            "line": 19,
+            "name": "verifico la ventana de inicio",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:10"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:49"
             },
             "result": {
               "status": "passed",
-              "duration": 609145599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "he logs in with valid credentials2",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 115664399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "he should see the dashboard2",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition Copy.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1056399
+              "duration": 6205100
             }
           },
           {
@@ -138,96 +132,27 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 194448900
+              "duration": 969589099
             }
           }
         ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Login",
-    "tags": [],
-    "uri": "src\\tests\\features\\login-failed.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "login;user-logs-in-successfully",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "User logs in successfully",
-        "steps": [
+        "tags": [
           {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 470619000
-            }
+            "name": "@ejecucion_2",
+            "line": 15
           },
           {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "Juan is on the login page",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 652431099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "he logs in with valid credentials",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:21"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 3544960000,
-              "error_message": "page.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('#add-to-cart-sauce-labs-backpack')\u001b[22m\n\n    at Click.attemptAs (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\interaction.ts:32:16)\n    at async Actor.performs (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\screenplay-pattern.ts:84:7)\n    at async Login.performAs (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\task.ts:26:5)\n    at async Actor.performs (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\screenplay-pattern.ts:82:7)\n    at async CustomWorld.<anonymous> (C:\\Users\\usuario\\Desktop\\cristian\\temporal-screenplay\\src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:23:3)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "he should see the dashboard",
-            "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:27"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 152994699
-            }
+            "name": "@regresion",
+            "line": 15
           }
         ],
-        "tags": [],
         "type": "scenario"
       }
     ],
-    "id": "login",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Login",
+    "id": "ingresar-a-la-pagina-principal-de-claro",
+    "line": 2,
+    "keyword": "Característica",
+    "name": "Ingresar a la pagina principal de Claro",
     "tags": [],
     "uri": "src\\tests\\features\\login.feature"
   }

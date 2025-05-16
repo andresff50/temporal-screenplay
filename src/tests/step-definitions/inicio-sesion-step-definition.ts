@@ -1,5 +1,6 @@
 import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { AbrirPagina } from '../../tasks/abrir-pagina';
+import { Login } from '../../tasks/inicio-sesion';
 import { CustomWorld } from "../../support/world";
 import { InicioSesionModel } from '../../models/inicio-sesion-model';
 
@@ -43,6 +44,7 @@ Given('que inicio sesion en la pagina de SalesForce con los datos de sesion', as
   console.log('URL:', ambiente);
   console.log('User:', perfil);
   await this.getActor().performs(AbrirPagina.enElNavegador(inicioSesionModel.getUrl()));
+  await this.getActor().performs(Login.inOrangePage())
 
 });
 
