@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 796801200
+              "duration": 637950800
             }
           },
           {
@@ -34,11 +34,12 @@
             "line": 7,
             "name": "que inicio sesion en la pagina de SalesForce con los datos de sesion",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:38"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:39"
             },
             "result": {
-              "status": "passed",
-              "duration": 4829282000
+              "status": "failed",
+              "duration": 5035143300,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
             }
           },
           {
@@ -47,11 +48,11 @@
             "line": 9,
             "name": "verifico la ventana de inicio",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:54"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:55"
             },
             "result": {
-              "status": "passed",
-              "duration": 57818300
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -59,7 +60,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 210052999
+              "duration": 321847700
             }
           }
         ],
@@ -87,7 +88,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 826788999
+              "duration": 582821899
             }
           },
           {
@@ -107,11 +108,12 @@
             "line": 17,
             "name": "que inicio sesion en la pagina de SalesForce con los datos de sesion",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:38"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:39"
             },
             "result": {
-              "status": "passed",
-              "duration": 2650246799
+              "status": "failed",
+              "duration": 5034356000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\workspace\\Playwright\\temporal-screenplay\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
             }
           },
           {
@@ -120,11 +122,11 @@
             "line": 19,
             "name": "verifico la ventana de inicio",
             "match": {
-              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:54"
+              "location": "src\\tests\\step-definitions\\inicio-sesion-step-definition.ts:55"
             },
             "result": {
-              "status": "passed",
-              "duration": 90275600
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -132,7 +134,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 217096299
+              "duration": 275738600
             }
           }
         ],

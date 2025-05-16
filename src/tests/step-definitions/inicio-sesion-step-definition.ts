@@ -5,6 +5,7 @@ import { CustomWorld } from "../../config/world";
 import { InicioSesionModel } from '../../models/inicio-sesion-model';
 import { equals, Question, See } from "../../../screenplay/question";
 import { Title } from "../../questions/verificar-titulo";
+import { getCredenciales } from "../../utils/consultar-json";
 
 
 // const loginSuccesfull = {
@@ -47,7 +48,7 @@ Given('que inicio sesion en la pagina de SalesForce con los datos de sesion', as
   console.log('URL:', ambiente);
   console.log('User:', perfil);
   await this.getActor().performs(AbrirPagina.enElNavegador(inicioSesionModel.getUrl()));
-  await this.getActor().performs(Login.enSalesForce(ambiente, perfil))
+  await this.getActor().performs(Login.enSalesForce(getCredenciales(ambiente, perfil)))
 
 });
 
