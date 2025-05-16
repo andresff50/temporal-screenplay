@@ -1,14 +1,16 @@
 // features/support/world.ts
 import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
-import { Browser, BrowserContext, chromium, firefox, webkit, BrowserType ,Page } from 'playwright';
-import { Actor } from '../screenplay-pattern';
-import { BrowseTheWeb } from '../abilities';
+import { Browser, BrowserContext, chromium,firefox, webkit, BrowserType, Page } from 'playwright';
+import { BrowseTheWeb } from '../../screenplay/abilities';
+import { Actor } from '../../screenplay/actor';
+import { InicioSesionModel } from '../models/inicio-sesion-model';
 
 export class CustomWorld extends World {
   private browser!: Browser;
   private context!: BrowserContext;
   private page!: Page;
   private actor!: Actor;
+  public model?: InicioSesionModel;
 
   constructor(options: IWorldOptions) {
     super(options);

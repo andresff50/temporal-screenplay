@@ -1,0 +1,22 @@
+{
+  "sit01": {
+    "asesorCavDirecto": {
+      "usuario": "autosf1@claro.com.co.sit01",
+      "contrasena": "autosf01"
+    },
+    "asesorCavAliados": {
+      "usuario": "autosf2@claro.com.co.sit01",
+      "contrasena": "autosf02"
+    }
+  },
+  "uat": {
+    "asesorCavDirecto": {
+      "usuario": "autosf1@claro.com.co.uat",
+      "contrasena": "autosf01"
+    },
+    "asesorCavAliados": {
+      "usuario": "autosf2@claro.com.co.uat",
+      "contrasena": "autosf02"
+    }
+  }
+}

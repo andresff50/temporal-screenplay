@@ -8,7 +8,11 @@
     "resolveJsonModule": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": ".", 
+    "paths": {
+      "@screenplay/*": ["./*"]
+    },
   },
-  "include": ["src", "generate-pdf-from-allure.ts", "screenplay/abilities.ts"]
+  "include": ["**/*.ts"]
 }

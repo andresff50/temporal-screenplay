@@ -1,29 +1,39 @@
+import { getSalesforceUrl } from '../data/urls';
+
 export class InicioSesionModel {
   private static instance: InicioSesionModel | null = null;
 
   private constructor(
-    public username: string,
-    public password: string
+    public ambiente: string,
+    public perfil: string,
+    private url: string,
+    public usuario: string = '',
+    public contrasena: string = ''
   ) {}
 
-  getUsername(): string {
-    return this.username;
-  }
-
-  getPassword(): string {
-    return this.password;
-  }
-
-  static getInstance(username?: string, password?: string): InicioSesionModel {
+  static getInstance(ambiente?: string, perfil?: string): InicioSesionModel {
     if (!InicioSesionModel.instance) {
-      if (!username || !password) {
+      if (!ambiente || !perfil) {
         throw new Error("Username and password are required for the first call to getInstance.");
       }
+      const url = getSalesforceUrl(ambiente);
       console.log("Creating instance...");
-      InicioSesionModel.instance = new InicioSesionModel(username, password);
+      InicioSesionModel.instance = new InicioSesionModel(ambiente, perfil, url);
     } else {
       console.log("Returning existing instance...");
     }
     return InicioSesionModel.instance;
+  }
+
+  getAmbiente(): string {
+    return this.ambiente;
+  }
+
+  getPerfil(): string {
+    return this.perfil;
+  }
+
+  getUrl(): string {
+    return this.url;
   }
 }

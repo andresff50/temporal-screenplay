@@ -1,7 +1,10 @@
-// src/interactions/NavigateTo.ts
-import { Interaction } from './screenplay-pattern';
-import { Actor } from './screenplay-pattern';
+import { Page, Browser, BrowserContext } from '@playwright/test';  
+import { Actor } from './actor';
 import { BrowseTheWeb } from './abilities';
+
+export abstract class Interaction {  
+  public abstract attemptAs(actor: Actor): Promise<unknown>;  
+}  
 
 export class NavigateTo extends Interaction {
   constructor(private readonly url: string) {
