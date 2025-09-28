@@ -14,7 +14,7 @@ Given('que inicio sesion en la pagina de SalesForce con los datos de sesion', {t
   const table = dataTable.raw();
   console.log(dataTable)
   const ambiente = table[0][0]; // 'https://www.elliotdenolf.com/blog/cucumberjs-with-typescript'
-  const perfil = table[0][1]; // 'asesorCavDirecto'  
+  const perfil = table[0][1]; // '---------'  
   const inicioSesionModel = InicioSesionModel.getInstance(ambiente, perfil);
   this.model = inicioSesionModel;
 
